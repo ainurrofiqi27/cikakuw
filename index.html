@@ -678,6 +678,7 @@
       <div class="slide-from">— dari qiyu</div>
     </div>
 
+    
     <!-- Slide 2 -->
     <div class="slide-card" id="slide1" style="display:none;">
       <span class="slide-icon">🌟💕</span>
@@ -686,13 +687,22 @@
         aku berharap semesta selalu<br>
         bisa membuatmu bahagia<br>
         tersenyum, dan tertawa<br>
+        thank you for treating me so well, i really appreciate every little thing you do for me
       </div>
       <div class="slide-from">— dari qiyu</div>
     </div>
 
+    <!-- Slide 2 -->
+    <div class="slide-card" id="slide2" style="display:none;">
+      <div class="slide-text">
+        sayangi dirimu atau sini aku yang sayangi kamu<br><br>
+        secape capenya aku menjalani hari, aku gapernah cape mikirin kamu tiap hari awww
+      </div>
+      <div class="slide-from">— dari qiyu</div>
+    </div>
 
     <!-- Slide 3: Planet -->
-    <div class="slide-card planet-slide" id="slide2" style="display:none;">
+    <div class="slide-card planet-slide" id="slide3" style="display:none;">
       <div class="planet-scene">
         <div class="planet-label">i love you cika</div>
         <div class="planet-wrapper">
@@ -721,7 +731,7 @@
 
 
     <!-- Slide 4: Link -->
-    <div class="slide-card link-slide" id="slide3" style="display:none;">
+    <div class="slide-card link-slide" id="slide4" style="display:none;">
       <span class="slide-icon">🎬💕</span>
       <div class="link-title">Ada sesuatu lagi buat Cika!</div>
       <div class="slide-text" style="font-size:1rem;margin-bottom:20px;">
@@ -739,6 +749,7 @@
         <div class="dot" id="dot1"></div>
         <div class="dot" id="dot2"></div>
         <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
       </div>
       <button class="nav-btn" id="nextSlideBtn" onclick="changeSlide(1)">→</button>
     </div>
@@ -747,7 +758,7 @@
 
 <script>
 let currentSlide = 0;
-const totalSlides = 4;
+const totalSlides = 5;
 
 function goToScreen2() {
   document.getElementById('screen1').classList.remove('active');
@@ -845,8 +856,8 @@ function showSlide(index) {
   document.getElementById('nextSlideBtn').disabled = index === totalSlides - 1;
 
   // Add stars to planet slide
-  if (index === 2) {
-    const card = document.getElementById('slide2');
+  if (index === 3) {
+    const card = document.getElementById('slide3');
     let stars = card.querySelector('.planet-stars');
     if (!stars) {
       stars = document.createElement('div');
